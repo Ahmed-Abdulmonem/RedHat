@@ -24,7 +24,7 @@ do
     PASS=$MyPassword
 
         sshpass -p $PASS ssh -p $MyPort -o StrictHostKeychecking=no $USR@$HOST \
-            -T "echo 'T@nm3y@H' | passwd --stdin root"                 \
+            -T "echo 'Netpassword' | passwd --stdin root"                 \
             < /dev/null | tee -a output.log
 done
 
